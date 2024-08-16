@@ -39,6 +39,14 @@ def _unescape(value):
         .replace('&apos;', '\'')
     )
 
+def escape(value):
+    return (value
+        .replace('<', '&lt;')
+        .replace('>', '&gt;')
+        .replace('"', '&quot;')
+        .replace('&', '&amp;')
+        .replace('\'', '&apos;')
+    )
 
 def parse_response(action, resp):
     arguments = []
