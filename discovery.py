@@ -8,8 +8,8 @@ import time
 
 import xmltok
 
-import upnp
-import sonos
+from . import upnp
+from . import sonos
 
 
 DEFAULT_DISCOVER_TIMEOUT = 2

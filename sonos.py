@@ -8,8 +8,8 @@ import io
 
 import xmltok
 
-import upnp
-import discovery
+from . import upnp
+from . import discovery
 
 
 BASE_URL_TEMPLATE = 'http://%s:1400'
